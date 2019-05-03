@@ -79,7 +79,7 @@ public class HGUCoursePatternAnalyzer {
 	private boolean studentExist(Student[] students, Student student) {
 		// TODO: implement this method
 		for(int i = 0; i<students.length;i++) {
-			if(students!=null&&students[i].getName().equals(student.getName()))
+			if(student!=null&&students[i].getName().equals(student.getName()))
 				return true;
 		}
 		return false;
