@@ -6,7 +6,10 @@ public class Student {
 	public Student(String name){
 		this.studentName = name;
 	}
-	
+	/**
+	 * this method the Name of Student object
+	 * @return
+	 */
 	public String getName() {
 		return this.studentName;
 	}

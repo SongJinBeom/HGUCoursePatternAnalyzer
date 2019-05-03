@@ -7,6 +7,10 @@ public class Course {
 		this.courseName = name;
 	}
 	
+	/**
+	 *	This method returns the CourseName of Course object
+	 * @return
+	 */
 	public String getCourseName() {
 		return this.courseName;
 	}
