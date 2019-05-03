@@ -5,7 +5,7 @@ import edu.handong.analysis.datamodel.Student;
 
 public class HGUCoursePatternAnalyzer {
 	
-	String[] lines = {	"1999-1, JC Nam, Java Programming",
+	private String[] lines = {	"1999-1, JC Nam, Java Programming",
 						"1999-2, JC Nam, Programming Language Theory",
 						"1999-1, JC Nam, Data Structures",
 						"2001-1, JC Nam, Database Systems",
@@ -19,10 +19,10 @@ public class HGUCoursePatternAnalyzer {
 						"2019-1, SJ Kim, Algorithm Analysis",
 						};
 
-	int numOfStudents;
-	int numOfCourses;
-	Student[] students;
-	Course[] courses;
+	private int numOfStudents;
+	private int numOfCourses;
+	private Student[] students;
+	private Course[] courses;
 	
 	/**
 	 * This method runs our analysis logic to get the list of student and course names from lines.
@@ -79,7 +79,7 @@ public class HGUCoursePatternAnalyzer {
 	private boolean studentExist(Student[] students, Student student) {
 		// TODO: implement this method
 		for(int i = 0; i<students.length;i++) {
-			if(students[i].getName().equals(student.getName()))
+			if(students!=null&&students[i].getName().equals(student.getName()))
 				return true;
 		}
 		return false;
@@ -119,7 +119,7 @@ public class HGUCoursePatternAnalyzer {
 		// TODO: implement this method
 
 		for(int i = 0; i<courses.length;i++) {
-			if(courses[i].getCourseName().equals(course.getCourseName()))
+			if(courses!=null&&courses[i].getCourseName().equals(course.getCourseName()))
 				return true;
 		}
 		return false;
